@@ -36,7 +36,7 @@ play :gs3
 sleep 2
 play :e5
 sleep 2
-4.times do
+live_loop do
   kanye
 end
 sample tecca
