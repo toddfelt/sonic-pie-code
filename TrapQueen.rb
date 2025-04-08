@@ -72,16 +72,11 @@ define :notes3  do |note1, note2, note3, note4, note5, note6, note7, note8, note
   play note8, sustain: 2
   play note9, sustain: 2
   play note10, sustain: 2
-  sleep 1.5
-  
+  sleep 1.5  
 end
 
 
-
-
 #start
-
-
 live_loop :top do
   sample bang
   sleep 8
@@ -125,7 +120,42 @@ live_loop :top do
   notes :e5, :g5, :b5, :c6, 2
   melody
   #16
+  notes :e5, :g5, :c6, :e6, 1
+  play :d5, sustain: 2
+  play :d6, sustain: 2
+  play :f5, sustain: 2
+  sleep 0.5
+  play :c5, sustain: 2
+  play :c6, sustain: 2
+  sleep 0.5
   
+  play :c5, sustain: 2
+  play :c6, sustain: 2
+  play :f5, sustain: 2
+  sleep 0.5
+  play :c5, sustain: 2
+  play :c6, sustain: 2
+  sleep 0.5
+  play :c5, sustain: 2
+  play :c6, sustain: 2
+  play :f5, sustain: 2
+  sleep 0.5
+  play :g6, sustain: 2
+  play :g5, sustain: 2
+  sleep 0.5
+  # 17
+  notes :e5, :a5, :c5, :e6, 2
+  tone
+  sleep 1
+  play :g5, sustain: 2
+  play :g6, sustain: 2
+  #18
+  notes :e5, :a5, :c5, :e6, 1
+  tone
+  tone
+  play :g5, sustain: 2
+  play :g6, sustain: 2
+  sleep 1
   
   stop
 end
@@ -159,7 +189,10 @@ live_loop :bottom do
   #15
   notes2 :g3, :g2, :g3, :b4, :d4 , :g4, :g3, :b4, :d4 , :g4
   #16
+  notes2 :gs3, :gs2, :g3, :b4, :e4, :gs4,:g3, :b4, :e4, :gs4
+  #17 and 18
+  notes3 :f2, :f3, :c3, :f3, :a4, :c4, :c3, :f3, :a4, :c4
   
+
   stop
 end
-
